@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <!-- include the header section -->
-    <?php include "view/Header.php" ?>
+<!-- include the header section -->
+<?php include "view/Header.php" ?>
 
-    <!-- include the login form -->
-    <?php include "view/LoginForm.php" ?>
+<!-- include the login form -->
+<?php include "view/LoginForm.php" ?>
 
-    <!-- include the footer section -->
-    <?php include("view/Footer.php") ?>
+<!-- include the footer section -->
+<?php include("view/Footer.php") ?>
 </body>
 </html>

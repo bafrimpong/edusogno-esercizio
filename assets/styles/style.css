@@ -30,6 +30,11 @@ body {
     padding: 35px 0px 0px 51px;
 }
 
+.pull-topbar-down {
+    /* margin-bottom: 170px; */
+}
+
+
 #form-title {
     color: #134077;
     text-align: center;
@@ -82,14 +87,17 @@ body {
     font-weight: 700;
     line-height: 99.5%;
     text-decoration: none;
+    /* padding: 10px; */
     padding: 19px;
     display: block;
     text-align: center;
     margin-top: 40px;
+    /* 19.9px */
 }
 
 .event-title {
     color: #231F20;
+    /* text-align: center; */
     font-family: DM Sans;
     font-size: 36px;
     font-style: normal;
@@ -106,6 +114,10 @@ body {
     line-height: 99.5%;
     /* 19.9px */
     margin-top: 15px;
+}
+
+.login-form-title {
+    /* margin-top: -100px; */
 }
 
 .form-label {
@@ -148,11 +160,19 @@ body {
     color: #CCCCCC;
 }
 
-#view-hide-password {
-    top: 65%;
+.toggle-password-view {
     right: 8%;
     position: absolute;
     cursor: pointer;
+    display: inline-block;
+}
+
+.toggle-password-view-registration {
+    top: 65%;
+}
+
+.toggle-password-view-login {
+    top: 29.5%;
 }
 
 .general-button {
@@ -195,6 +215,12 @@ body {
     font-weight: 700;
     line-height: 99.5%;
     text-decoration-line: underline;
+}
+
+/* backgrounds */
+#curvy-bg-container {
+    /* height: 112px; */
+    /* position: absolute; */
 }
 
 #curvy-bg-white {
