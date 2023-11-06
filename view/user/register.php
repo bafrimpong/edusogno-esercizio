@@ -12,7 +12,7 @@
         <?php include_once "view/topbar.php" ?>
 
         <!-- form start -->
-        <h3 id="form-title">Crea il tuo account</h3>
+        <h3 id="form-title">Create your account</h3>
         <div id="form-container">
             <!-- feedback container-->
             <?php
@@ -24,16 +24,16 @@
 
             <form action="<?php echo Route::postCreateRegistrationPath() ?>"  method="post" id="registration-form">
 
-                <label class="form-label" for="first_name">Inserisci il nome</label>
+                <label class="form-label" for="first_name">Enter your first name</label>
                 <input class="form-text-input" type="text" name="first_name" id="first_name" placeholder="Mario">
 
-                <label class="form-label" for="last_name">Inserisci il cognome</label>
+                <label class="form-label" for="last_name">Enter your last name</label>
                 <input class="form-text-input" type="text" name="last_name" id="last_name" placeholder="Rossi">
 
-                <label class="form-label" for="email">Inserisci l’email</label>
+                <label class="form-label" for="email">Enter your e-mail</label>
                 <input class="form-text-input" type="email" name="email" id="email" placeholder="name@example.com">
 
-                <label class="form-label" for="password">Inserisci la password</label>
+                <label class="form-label" for="password">Enter your password</label>
                 <input class="form-text-input" type="password" name="password" id="password" placeholder="Scrivila qui">
                 <div id="view-hide-password" class="toggle-password-view toggle-password-view-registration" onclick="togglePasswordView()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" fill="none" id="bis">
@@ -41,12 +41,12 @@
                     </svg>
                 </div>
 
-                <button type="button" class="register-button general-button" onclick="validateUserRegistration('this')" id="btn_register">REGISTRATI</button>
+                <button type="button" class="register-button general-button" onclick="validateUserRegistration('this')" id="btn_register">REGISTER</button>
 
                 <section id="have-account">
-                    <label>Hai già un account?</label>
+                    <label>Already have an account?</label>
                     <?php
-                    echo('&nbsp;<a href="'.Route::getLoginPath().'" id="login-link">Accedi</a>');
+                    echo('&nbsp;<a href="'.Route::getLoginPath().'" id="login-link">Login here</a>');
                     ?>
                 </section>
             </form>

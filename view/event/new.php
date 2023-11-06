@@ -18,19 +18,19 @@ include_once "helper/Helper.php";
     <?php
     if (!empty($_SESSION['EDIT_EVENT_FAILED_MSG'])){
         Helper::showErrorMessage($_SESSION['EDIT_EVENT_FAILED_MSG']);
-    };
+    }
     unset($_SESSION['EDIT_EVENT_FAILED_MSG']);
     ?>
 
     <form action="<?php echo Route::getCreateEventPath() ?>" method="post" id="event-form">
 
-        <label class="form-label" for="event_name">Event name</label>
+        <label class="form-label" for="event_name">Enter event name</label>
         <input class="form-text-input" type="text" name="event_name" id="event_name" placeholder="Visit to Kintampo Falls">
 
-        <label class="form-label" for="event_date">Event date</label>
+        <label class="form-label" for="event_date">Enter event date</label>
         <input class="form-text-input" type="date" name="event_date" id="event_date">
 
-        <label class="form-label" for="event_attendees">Attendees</label>&nbsp;<small style="color: crimson;">(Hold down Ctrl + click to select multiple)</small>
+        <label class="form-label" for="event_attendees">Select attendees</label>&nbsp;<small style="color: crimson;">(Hold down Ctrl + click to select multiple)</small>
         <select name="event_attendees[]" id="event_attendees" class="form-text-input" multiple title="Hold down Ctl + click to select many" size="2">
             <?php
                 $user = new UsersController();
@@ -42,7 +42,7 @@ include_once "helper/Helper.php";
             ?>
         </select>
 
-        <label class="form-label" for="event_description">Description</label>
+        <label class="form-label" for="event_description">Enter event description</label>
         <textarea id="event_description" name="event_description" rows="2" class="form-text-input" >A trip to Kintampo falls and Fiema monkey sanctuary
         </textarea>
 

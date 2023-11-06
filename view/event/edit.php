@@ -5,7 +5,7 @@ include_once "helper/Helper.php";
 <html lang="en">
 <head>
     <?php include_once "view/head.php" ?>
-    <title>New Event</title>
+    <title>Edit Event</title>
 </head>
 <body>
 <!-- include the header section -->
@@ -35,13 +35,13 @@ include_once "helper/Helper.php";
 
         <input type="hidden" name="event_id" id="event_id" value="<?php echo($event[0]['id']) ?>">
 
-        <label class="form-label" for="event_name">Event name</label>
+        <label class="form-label" for="event_name">Enter event name</label>
         <input class="form-text-input" type="text" name="event_name" id="event_name" value="<?php echo($event[0]['event_name']) ?>" placeholder="Visit to Kintampo Falls">
 
-        <label class="form-label" for="event_date">Event date</label>
+        <label class="form-label" for="event_date">Enter event date</label>
         <input class="form-text-input" type="date" name="event_date" id="event_date" value="<?php echo(Helper::formatDate('Y-m-d', $event[0]['event_date'])) ?>">
 
-        <label class="form-label" for="event_attendees">Attendees</label>&nbsp;<small style="color: crimson;">(Hold down Ctrl + click to select multiple)</small>
+        <label class="form-label" for="event_attendees">Select attendees</label>&nbsp;<small style="color: crimson;">(Hold down Ctrl + click to select multiple)</small>
         <select name="event_attendees[]" id="event_attendees" class="form-text-input" multiple title="Hold down Ctl + click to select many" size="2">
             <?php
                 $user = new UsersController();
@@ -58,7 +58,7 @@ include_once "helper/Helper.php";
             ?>
         </select>
 
-        <label class="form-label" for="event_description">Description</label>
+        <label class="form-label" for="event_description">Enter description</label>
         <textarea id="event_description" name="event_description" rows="2" class="form-text-input" ><?php echo($event[0]['event_description']) ?>
         </textarea>
 

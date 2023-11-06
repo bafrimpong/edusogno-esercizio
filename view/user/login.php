@@ -14,7 +14,7 @@
         ?>
 
         <!-- form start -->
-        <h3 id="form-title" class="login-form-title">Hai già un account?</h3>
+        <h3 id="form-title" class="login-form-title">Do you already have an account?</h3>
         <div id="form-container" style="height: auto">
 
             <!-- feedback container-->
@@ -27,10 +27,10 @@
 
             <form action="<?php echo(Route::postAuthenticationPath()) ?>" method="post" id="login-form">
 
-                <label class="form-label" for="email">Inserisci l’e-mail</label>
+                <label class="form-label" for="email">Enter your e-mail</label>
                 <input class="form-text-input" type="email" name="email" id="email" placeholder="name@example.com">
 
-                <label class="form-label" for="password">Inserisci la password</label>
+                <label class="form-label" for="password">Enter your password</label>
                 <input class="form-text-input" type="password" name="password" id="password" placeholder="Scrivila qui">
                 <div class="toggle-password-view toggle-password-view-login" onclick="togglePasswordView()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" fill="none">
@@ -38,19 +38,19 @@
                     </svg>
                 </div>
 
-                <button type="button" class="register-button general-button" onclick="validateUserLogin('this')" id="btn_login">ACCEDI</button>
+                <button type="button" class="register-button general-button" onclick="validateUserLogin('this')" id="btn_login">Login</button>
 
                 <section id="have-account">
-                    <label>Non hai ancora un profilo?</label>
+                    <label>Don't have a account yet?</label>
                     <?php
-                        echo('&nbsp;<a href="'.Route::getRegistrationPath().'" id="login-link">Registrati</a>');
+                        echo('&nbsp;<a href="'.Route::getRegistrationPath().'" id="login-link">Register here</a>');
                     ?>
                 </section>
 
                 <section id="have-account">
-                    <label>Ha dimenticato la password?</label>
+                    <label>Password forgotten?</label>
                     <?php
-                        echo('&nbsp;<a href="'.Route::getPasswordResetPath().'" id="login-link">Reimposta qui</a>');
+                        echo('&nbsp;<a href="'.Route::getPasswordResetPath().'" id="login-link">Reset here</a>');
                     ?>
                 </section>
             </form>
