@@ -63,12 +63,13 @@ include_once "helper/Helper.php";
         </textarea>
 
         <div>
-            <button type="button" class="register-button general-button" onclick="validateCreateEvent('this')" style="width: 60%; display: inline-block" id="btn_update_event" name="btn_update_event">Add Event</button>
-            <a type="button" href="<?php echo(Route::getEventsPath()) ?>" style="width: 35%; display: inline-block" class="register-button general-button" id="back-home" name="back-home">&leftarrow; Back</a>
+            <button type="button" class="register-button general-button" onclick="validateCreateEvent('this')" id="btn_update_event" name="btn_update_event">Add Event</button>
         </div>
 
-
     </form>
+    <div style="text-align: center; padding-top: 10px;">
+        <a href="<?php echo(Route::getEventsPath()) ?>">Cancel</a>
+    </div>
 </div>
 <!-- form end -->
 
