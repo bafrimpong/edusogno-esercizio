@@ -1,9 +1,10 @@
 <?php
     class Event {
-        private $event_name;
-        private $event_attendees;
+        private string $event_name;
+        private array $event_attendees;
         private $event_date;
         private $event_id;
+        private string $description;
 
         // setters and getters
         function setEventId($_id){
@@ -22,21 +23,31 @@
             $this->event_date = $_description;
         }
 
+        function setEventDescription($_description)
+        {
+            $this->description = $_description;
+        }
+
         function getEventId(){
             return $this->event_id;
         }
 
-        function getEventName()
+        function getEventName(): string
         {
             return $this->event_name;
         }
 
-        function getEventAttendees()
+        function getEventAttendees(): array
         {
             return $this->event_attendees;
         }
 
         function getEventDate() {
             return $this->event_date;
+        }
+
+        function getEventDescription(): string
+        {
+            return $this->description;
         }
     }

@@ -2,11 +2,12 @@
 
 class User {
     // member variables
-    private $first_name;
-    private $last_name;
-    private $email;
-    private $password;
+    private String $first_name;
+    private String $last_name;
+    private String $email;
+    private String $password;
     private $user_id;
+    private String $fullName;
 
 
     // setters and getters
@@ -30,19 +31,29 @@ class User {
         $this->user_id = $_id;
     }
 
-    public function getFirstName(){
+    public function setFullName($_first_name, $_last_name): string
+    {
+        $this->fullName = $_first_name . ", " . strtoupper($_last_name);
+        return $this->fullName;
+    }
+
+    public function getFirstName(): string
+    {
         return $this->first_name;
     }
 
-    public function getLastName(){
+    public function getLastName(): string
+    {
         return $this->last_name;
     }
 
-    public function getEmail(){
+    public function getEmail(): string
+    {
         return $this->email;
     }
 
-    public function getPassword(){
+    public function getPassword(): string
+    {
         return $this->password;
     }
 
@@ -50,7 +61,8 @@ class User {
         return $this->user_id;
     }
 
-    public function getFullName(){
-        return $this->first_name." ".$this->last_name;
+    public function getFullName(): string
+    {
+        return $this->fullName;
     }
 }
