@@ -21,6 +21,14 @@ Laravel or Symphony, Bootstrap, React JS amounts to the rejection of the project
 In this regard, the code was purly written in HTML, CSS, PHP (with objects or classes preferred)
 and JavaScript.
 
+## Architecture
+The application uses the Model View Controller (MVC) architecture or pattern. Below are amongst some of the benefits of 
+the MVC architecture;
+* Seperation of concern
+* Modularity
+* Scalability
+* Code Resuse, etc
+
 ## Installing and Configuration
 
 ### Clonning the Repo
@@ -88,3 +96,10 @@ the `sendmail_path` to the path of the `sendmail` directory as below.
 - E-mail is sent to a user upon a modification or creation of an event
 ![Event Creation Email](assets/images/event-email.png)
 ![Event Edit Email](assets/images/event-email-edit.png)
+
+## Copy Right
+I **duly acknowledge** all resources I used including teaching materials, code snippers, stackoverflow and other useful materials
+which made the completion of this app a success.
+
+You are also free to clone or download the work to learn and enhance your knowledge. I am open to critique and so I welcome suggestions from
+all about the code quality, best practices, etc.
