@@ -43,7 +43,7 @@ include_once "helper/Helper.php";
         </select>
 
         <label class="form-label" for="event_description">Enter event description</label>
-        <textarea id="event_description" name="event_description" rows="2" class="form-text-input" >A trip to Kintampo falls and Fiema monkey sanctuary
+        <textarea id="event_description" name="event_description" rows="2" class="form-text-input" >
         </textarea>
 
         <button type="button" class="register-button general-button" onclick="validateCreateEvent('this')" id="btn_create_event" name="btn_create_event">Add Event</button>

@@ -12,7 +12,7 @@ include_once "helper/Helper.php";
 <?php include_once "view/topbar.php" ?>
 
 <!-- form start -->
-<h3 id="form-title">List of Events</h3>
+<h3 id="form-title">List of Users</h3>
 <div id="form-container" style="width: 70% !important;">
     <?php
     if (isset($_SESSION["ACTION_SUCCESS"])){
